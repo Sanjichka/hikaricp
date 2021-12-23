@@ -31,4 +31,16 @@ public class StudentController {
     public List<Student> getStudents() throws SQLException {
         return studentService.getStudents();
     }
+
+    @GetMapping("/students")
+    public void getTest(){
+        studentService.getTest();
+    }
+
+    @GetMapping("/students1")
+    public void getTest1(){
+        studentService.getTest1();
+    }
+
+
 }

@@ -1,56 +1,84 @@
-Dec 23, 2021 10:16:59 PM org.postgresql.Driver connect
+Dec 23, 2021 11:30:18 PM org.postgresql.Driver connect
 FINE: Connecting with URL: jdbc:postgresql://localhost:5432/studentdb?loggerLevel=DEBUG&loggerFile=postgresql_logs.log
-Dec 23, 2021 10:16:59 PM org.postgresql.jdbc.PgConnection <init>
+Dec 23, 2021 11:30:18 PM org.postgresql.jdbc.PgConnection <init>
 FINE: PostgreSQL JDBC Driver 42.3.1
-Dec 23, 2021 10:16:59 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
+Dec 23, 2021 11:30:18 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
 FINE:   setDefaultFetchSize = 0
-Dec 23, 2021 10:16:59 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
+Dec 23, 2021 11:30:18 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
 FINE:   setPrepareThreshold = 5
-Dec 23, 2021 10:16:59 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+Dec 23, 2021 11:30:18 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
 FINE: Trying to establish a protocol version 3 connection to localhost:5432
-Dec 23, 2021 10:16:59 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:18 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Receive Buffer Size is 65,536
-Dec 23, 2021 10:16:59 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:18 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Send Buffer Size is 1,313,280
-Dec 23, 2021 10:16:59 PM org.postgresql.Driver connect
+Dec 23, 2021 11:30:18 PM org.postgresql.Driver connect
 FINE: Connecting with URL: jdbc:postgresql://localhost:5432/studentdb?loggerLevel=DEBUG&loggerFile=postgresql_logs.log
-Dec 23, 2021 10:16:59 PM org.postgresql.jdbc.PgConnection <init>
+Dec 23, 2021 11:30:18 PM org.postgresql.jdbc.PgConnection <init>
 FINE: PostgreSQL JDBC Driver 42.3.1
-Dec 23, 2021 10:16:59 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
+Dec 23, 2021 11:30:18 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
 FINE:   setDefaultFetchSize = 0
-Dec 23, 2021 10:16:59 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
+Dec 23, 2021 11:30:18 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
 FINE:   setPrepareThreshold = 5
-Dec 23, 2021 10:16:59 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+Dec 23, 2021 11:30:18 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
 FINE: Trying to establish a protocol version 3 connection to localhost:5432
-Dec 23, 2021 10:16:59 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:18 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Receive Buffer Size is 65,536
-Dec 23, 2021 10:16:59 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:18 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Send Buffer Size is 1,313,280
-Dec 23, 2021 10:17:11 PM org.postgresql.Driver connect
+Dec 23, 2021 11:30:25 PM org.postgresql.Driver connect
 FINE: Connecting with URL: jdbc:postgresql://localhost:5432/studentdb?loggerLevel=DEBUG&loggerFile=postgresql_logs.log
-Dec 23, 2021 10:17:11 PM org.postgresql.jdbc.PgConnection <init>
+Dec 23, 2021 11:30:25 PM org.postgresql.jdbc.PgConnection <init>
 FINE: PostgreSQL JDBC Driver 42.3.1
-Dec 23, 2021 10:17:11 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
+Dec 23, 2021 11:30:25 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
 FINE:   setDefaultFetchSize = 0
-Dec 23, 2021 10:17:11 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
+Dec 23, 2021 11:30:25 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
 FINE:   setPrepareThreshold = 5
-Dec 23, 2021 10:17:11 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+Dec 23, 2021 11:30:25 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
 FINE: Trying to establish a protocol version 3 connection to localhost:5432
-Dec 23, 2021 10:17:11 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:25 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Receive Buffer Size is 65,536
-Dec 23, 2021 10:17:11 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:25 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Send Buffer Size is 1,313,280
-Dec 23, 2021 10:17:11 PM org.postgresql.Driver connect
+Dec 23, 2021 11:30:26 PM org.postgresql.Driver connect
 FINE: Connecting with URL: jdbc:postgresql://localhost:5432/studentdb?loggerLevel=DEBUG&loggerFile=postgresql_logs.log
-Dec 23, 2021 10:17:11 PM org.postgresql.jdbc.PgConnection <init>
+Dec 23, 2021 11:30:26 PM org.postgresql.jdbc.PgConnection <init>
 FINE: PostgreSQL JDBC Driver 42.3.1
-Dec 23, 2021 10:17:11 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
+Dec 23, 2021 11:30:26 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
 FINE:   setDefaultFetchSize = 0
-Dec 23, 2021 10:17:11 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
+Dec 23, 2021 11:30:26 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
 FINE:   setPrepareThreshold = 5
-Dec 23, 2021 10:17:11 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+Dec 23, 2021 11:30:26 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
 FINE: Trying to establish a protocol version 3 connection to localhost:5432
-Dec 23, 2021 10:17:11 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:26 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Receive Buffer Size is 65,536
-Dec 23, 2021 10:17:11 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+Dec 23, 2021 11:30:26 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+FINE: Send Buffer Size is 1,313,280
+Dec 23, 2021 11:31:54 PM org.postgresql.Driver connect
+FINE: Connecting with URL: jdbc:postgresql://localhost:5432/studentdb?loggerLevel=DEBUG&loggerFile=postgresql_logs.log
+Dec 23, 2021 11:31:54 PM org.postgresql.jdbc.PgConnection <init>
+FINE: PostgreSQL JDBC Driver 42.3.1
+Dec 23, 2021 11:31:54 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
+FINE:   setDefaultFetchSize = 0
+Dec 23, 2021 11:31:54 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
+FINE:   setPrepareThreshold = 5
+Dec 23, 2021 11:31:54 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+FINE: Trying to establish a protocol version 3 connection to localhost:5432
+Dec 23, 2021 11:31:54 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+FINE: Receive Buffer Size is 65,536
+Dec 23, 2021 11:31:54 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+FINE: Send Buffer Size is 1,313,280
+Dec 23, 2021 11:31:55 PM org.postgresql.Driver connect
+FINE: Connecting with URL: jdbc:postgresql://localhost:5432/studentdb?loggerLevel=DEBUG&loggerFile=postgresql_logs.log
+Dec 23, 2021 11:31:55 PM org.postgresql.jdbc.PgConnection <init>
+FINE: PostgreSQL JDBC Driver 42.3.1
+Dec 23, 2021 11:31:55 PM org.postgresql.jdbc.PgConnection setDefaultFetchSize
+FINE:   setDefaultFetchSize = 0
+Dec 23, 2021 11:31:55 PM org.postgresql.jdbc.PgConnection setPrepareThreshold
+FINE:   setPrepareThreshold = 5
+Dec 23, 2021 11:31:55 PM org.postgresql.core.v3.ConnectionFactoryImpl openConnectionImpl
+FINE: Trying to establish a protocol version 3 connection to localhost:5432
+Dec 23, 2021 11:31:55 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
+FINE: Receive Buffer Size is 65,536
+Dec 23, 2021 11:31:55 PM org.postgresql.core.v3.ConnectionFactoryImpl tryConnect
 FINE: Send Buffer Size is 1,313,280

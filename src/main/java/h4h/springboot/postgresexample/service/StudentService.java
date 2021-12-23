@@ -29,78 +29,46 @@ public class StudentService {
 //        return studentRepository.findAll();
 //    }
 
-    //int i=0;
+    int i=0;
     public void postStudent(Student student) {
         studentRepository.save(student);
     }
 
-    public List<Student> getStudents() throws SQLException {
+    public List<Student> getStudents() throws SQLException{
         String SQL_QUERY = "select * from student";
         List<Student> students = null;
-        //i++;
-        /*try{
+        i++;
+        try{
             if(i>4) {
                 throw new CustomExc("Max!!!"+i);
             }
 
         } catch (CustomExc e) {
             //e.printStackTrace();
+            i--;
             System.out.println(e.getMessage());
-        }*/
-//
-//        try  (
-//                Connection con = dataSource.getConnection();
-////                PreparedStatement pst = con.prepareStatement( SQL_QUERY );
-////                ResultSet rs = pst.executeQuery();
-//                ){
-//
-//            try( Connection con1 = dataSource.getConnection();
-////                 PreparedStatement pst1 = con1.prepareStatement( SQL_QUERY );
-////                 ResultSet rs1 = pst1.executeQuery();
-//                 ) {
-//                try( Connection con2 = dataSource.getConnection();
-////                     PreparedStatement pst2 = con2.prepareStatement( SQL_QUERY );
-////                     ResultSet rs2 = pst2.executeQuery();
-//                     ) {
-//                    try( Connection con3 = dataSource.getConnection();
-////                         PreparedStatement pst3 = con3.prepareStatement( SQL_QUERY );
-////                         ResultSet rs3 = pst3.executeQuery();
-//                         ) {
-//                        try( Connection con4 = dataSource.getConnection();
-//                             PreparedStatement pst4 = con4.prepareStatement( SQL_QUERY );
-//                             ResultSet rs4 = pst4.executeQuery();) {
-//                            students = new ArrayList<>();
-//                            Student student;
-//                            while ( rs4.next() ) {
-//                                student = new Student();
-//                                student.setId( rs4.getLong( "id" ) );
-//                                student.setName( rs4.getString( "name" ) );
-//                                students.add( student );
-//                            }
-//
-//                        }
-////                        catch(Exception e) {
-////                            e.printStackTrace();
-////                        }
-//                    }
-//                }
-//            }
+        }
 
-
-
-            //TimeUnit.SECONDS.sleep(30);
-            //i--;
-
-
-//        }
-//        catch(SQLException e){
-//            e.printStackTrace();
-//        }
-//        catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
-        func();
+        try  (
+                Connection con = dataSource.getConnection();
+                PreparedStatement pst = con.prepareStatement( SQL_QUERY );
+                ResultSet rs = pst.executeQuery();
+                ){
+                    students = new ArrayList<>();
+                    Student student;
+                    while ( rs.next() ) {
+                        student = new Student();
+                        student.setId( rs.getLong( "id" ) );
+                        student.setName( rs.getString( "name" ) );
+                        students.add( student );
+                    }
+                TimeUnit.SECONDS.sleep(30);
+                i--;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         return students;
     }
@@ -120,5 +88,35 @@ public class StudentService {
     }
 
 
+    public void getTest() {
+        func();
+    }
+
+    public void getTest1() {
+
+        try (
+                Connection con = dataSource.getConnection();
+        ) {
+
+            try (Connection con1 = dataSource.getConnection();
+            ) {
+                try (Connection con2 = dataSource.getConnection();
+                ) {
+                    try (Connection con3 = dataSource.getConnection();
+                    ) {
+                        try (Connection con4 = dataSource.getConnection();) {
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 
 }
