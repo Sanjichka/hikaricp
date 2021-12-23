@@ -37,15 +37,14 @@ public class StudentService {
     public List<Student> getStudents() throws SQLException{
         String SQL_QUERY = "select * from student";
         List<Student> students = null;
-        i++;
+
         try{
-            if(i>4) {
-                throw new CustomExc("Max!!!"+i);
+            if(i==4) {
+                throw new CustomExc("Max!!!");
             }
 
         } catch (CustomExc e) {
             //e.printStackTrace();
-            i--;
             System.out.println(e.getMessage());
         }
 
@@ -54,6 +53,7 @@ public class StudentService {
                 PreparedStatement pst = con.prepareStatement( SQL_QUERY );
                 ResultSet rs = pst.executeQuery();
                 ){
+                    i++;
                     students = new ArrayList<>();
                     Student student;
                     while ( rs.next() ) {
@@ -62,8 +62,8 @@ public class StudentService {
                         student.setName( rs.getString( "name" ) );
                         students.add( student );
                     }
-                TimeUnit.SECONDS.sleep(30);
-                i--;
+                    TimeUnit.SECONDS.sleep(30);
+                    i--;
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
