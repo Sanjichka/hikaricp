@@ -47,40 +47,44 @@ public class StudentService {
             //e.printStackTrace();
             System.out.println(e.getMessage());
         }*/
-
-        try  (
-                Connection con = dataSource.getConnection();
-                PreparedStatement pst = con.prepareStatement( SQL_QUERY );
-                ResultSet rs = pst.executeQuery();){
-
-            try( Connection con1 = dataSource.getConnection();
-                 PreparedStatement pst1 = con1.prepareStatement( SQL_QUERY );
-                 ResultSet rs1 = pst1.executeQuery();) {
-                try( Connection con2 = dataSource.getConnection();
-                     PreparedStatement pst2 = con2.prepareStatement( SQL_QUERY );
-                     ResultSet rs2 = pst2.executeQuery();) {
-                    try( Connection con3 = dataSource.getConnection();
-                         PreparedStatement pst3 = con3.prepareStatement( SQL_QUERY );
-                         ResultSet rs3 = pst3.executeQuery();) {
-                        try( Connection con4 = dataSource.getConnection();
-                             PreparedStatement pst4 = con4.prepareStatement( SQL_QUERY );
-                             ResultSet rs4 = pst4.executeQuery();) {
-                            students = new ArrayList<>();
-                            Student student;
-                            while ( rs4.next() ) {
-                                student = new Student();
-                                student.setId( rs4.getLong( "id" ) );
-                                student.setName( rs4.getString( "name" ) );
-                                students.add( student );
-                            }
-
-                        }
-                        catch(Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            }
+//
+//        try  (
+//                Connection con = dataSource.getConnection();
+////                PreparedStatement pst = con.prepareStatement( SQL_QUERY );
+////                ResultSet rs = pst.executeQuery();
+//                ){
+//
+//            try( Connection con1 = dataSource.getConnection();
+////                 PreparedStatement pst1 = con1.prepareStatement( SQL_QUERY );
+////                 ResultSet rs1 = pst1.executeQuery();
+//                 ) {
+//                try( Connection con2 = dataSource.getConnection();
+////                     PreparedStatement pst2 = con2.prepareStatement( SQL_QUERY );
+////                     ResultSet rs2 = pst2.executeQuery();
+//                     ) {
+//                    try( Connection con3 = dataSource.getConnection();
+////                         PreparedStatement pst3 = con3.prepareStatement( SQL_QUERY );
+////                         ResultSet rs3 = pst3.executeQuery();
+//                         ) {
+//                        try( Connection con4 = dataSource.getConnection();
+//                             PreparedStatement pst4 = con4.prepareStatement( SQL_QUERY );
+//                             ResultSet rs4 = pst4.executeQuery();) {
+//                            students = new ArrayList<>();
+//                            Student student;
+//                            while ( rs4.next() ) {
+//                                student = new Student();
+//                                student.setId( rs4.getLong( "id" ) );
+//                                student.setName( rs4.getString( "name" ) );
+//                                students.add( student );
+//                            }
+//
+//                        }
+////                        catch(Exception e) {
+////                            e.printStackTrace();
+////                        }
+//                    }
+//                }
+//            }
 
 
 
@@ -88,19 +92,33 @@ public class StudentService {
             //i--;
 
 
-        }
-        catch(SQLException e){
-            e.printStackTrace();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-//        catch(NullPointerException e) {
+//        }
+//        catch(SQLException e){
+//            e.printStackTrace();
+//        }
+//        catch (Exception e) {
 //            e.printStackTrace();
 //        }
 
+        func();
+
         return students;
     }
+
+    public void func() {
+
+        try(
+            Connection conn = dataSource.getConnection();
+        ){
+            func();
+
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 
 }
